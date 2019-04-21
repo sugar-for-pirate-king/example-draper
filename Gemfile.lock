@@ -1,3 +1,16 @@
+GIT
+  remote: https://github.com/stympy/faker.git
+  revision: 59a92644d5583828add1c68351074f6e52c6deb6
+  branch: master
+  specs:
+    faker (1.9.3)
+      i18n (>= 0.7)
+      pastel (~> 0.7.2)
+      thor (~> 0.20.0)
+      tty-pager (~> 0.12.0)
+      tty-screen (~> 0.6.5)
+      tty-tree (~> 0.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -29,6 +42,10 @@ GEM
       globalid (>= 0.3.6)
     activemodel (5.2.3)
       activesupport (= 5.2.3)
+    activemodel-serializers-xml (1.0.2)
+      activemodel (> 5.x)
+      activesupport (> 5.x)
+      builder (~> 3.1)
     activerecord (5.2.3)
       activemodel (= 5.2.3)
       activesupport (= 5.2.3)
@@ -74,6 +91,13 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
+    draper (3.1.0)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
+      activemodel-serializers-xml (>= 1.0)
+      activesupport (>= 5.0)
+      request_store (>= 1.0)
+    equatable (0.5.0)
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.10.0)
@@ -106,6 +130,9 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.10.2)
       mini_portile2 (~> 2.4.0)
+    pastel (0.7.2)
+      equatable (~> 0.5.0)
+      tty-color (~> 0.4.0)
     public_suffix (3.0.3)
     puma (3.12.1)
     rack (2.0.7)
@@ -140,6 +167,8 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     regexp_parser (1.4.0)
+    request_store (1.4.1)
+      rack (>= 1.4)
     ruby_dep (1.5.0)
     rubyzip (1.2.2)
     sass (3.7.4)
@@ -169,9 +198,22 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.0)
+    strings (0.1.5)
+      strings-ansi (~> 0.1)
+      unicode-display_width (~> 1.5)
+      unicode_utils (~> 1.4)
+    strings-ansi (0.1.0)
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.9)
+    tty-color (0.4.3)
+    tty-pager (0.12.1)
+      strings (~> 0.1.4)
+      tty-screen (~> 0.6)
+      tty-which (~> 0.4)
+    tty-screen (0.6.5)
+    tty-tree (0.2.0)
+    tty-which (0.4.0)
     turbolinks (5.2.0)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -179,6 +221,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
+    unicode-display_width (1.5.0)
+    unicode_utils (1.4.0)
     web-console (3.7.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -199,6 +243,8 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  draper
+  faker!
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
