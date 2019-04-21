@@ -1,24 +1,14 @@
-# README
+### Fun with Drapper.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple app to implement drapper. It's just shows list of collection music.
 
-Things you may want to cover:
+#### Depedencies
 
-* Ruby version
+- Draper
+- Faker
 
-* System dependencies
+### How to install
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Migrate database (_using Sqlite_) with `rails db:migrate`
+- Seeds data (see `db/seeds.rb`) with `rails db:seed`
+- Then run the server with `rails s`
