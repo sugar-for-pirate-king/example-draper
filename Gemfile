@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'draper'
 gem 'faker', git: 'https://github.com/stympy/faker.git', branch: 'master'
+gem 'rails-controller-testing'
+gem 'rspec-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
