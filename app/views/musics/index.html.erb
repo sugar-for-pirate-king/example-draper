@@ -1,0 +1,13 @@
+<h4>Koleksi Music</h4>
+
+
+<table border="1">
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Download URL</th>
+  </tr>
+  <% @musics.each do |music| %>
+    <%= music.render %>
+  <% end %>
+</table>

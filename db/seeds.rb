@@ -13,8 +13,8 @@
   author = Faker::Name.name
   url = Faker::Avatar.image
   Music.create!(
-    title: title,
-    author: author,
-    download_url: url
+    title: [title, nil].sample,
+    author: [author, nil].sample,
+    download_url: [url, nil].sample
   )
 end
